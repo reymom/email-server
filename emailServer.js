@@ -10,7 +10,7 @@ app.use(
   cors({
     // Set allowed origin from .env or allow all origins for testing
     origin: process.env.CORS_ALLOWED_ORIGIN || "*",
-    methods: ["GET", "POST"],
+    methods: ["GET", "POST", "OPTIONS"],
     allowedHeaders: ["Content-Type"],
   })
 );
