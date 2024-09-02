@@ -11,7 +11,7 @@ app.use(
     // Set allowed origin from .env or allow all origins for testing
     origin: process.env.CORS_ALLOWED_ORIGIN || "*",
     methods: ["GET", "POST", "OPTIONS"],
-    allowedHeaders: ["Content-Type"],
+    allowedHeaders: ["Content-Type", "x-access-token"],
   })
 );
 
