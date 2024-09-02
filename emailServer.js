@@ -2,8 +2,19 @@ require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
+const cors = require("cors");
 
 const app = express();
+
+app.use(
+  cors({
+    // Set allowed origin from .env or allow all origins for testing
+    origin: process.env.CORS_ALLOWED_ORIGIN || "*",
+    methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type"],
+  })
+);
+
 app.use(bodyParser.json());
 
 // Set up Nodemailer transporter
