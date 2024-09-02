@@ -18,6 +18,14 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+app.use((req, res, next) => {
+  const token = req.headers["x-access-token"];
+  if (!token || token !== process.env.SECRET_TOKEN) {
+    return res.status(403).send("Access denied");
+  }
+  next();
+});
+
 // Route to send confirmation email
 app.post("/send-confirmation-email", (req, res) => {
   const { to, token, domain } = req.body;
