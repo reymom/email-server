@@ -149,7 +149,7 @@ app.post("/send-password-reset-email", (req, res) => {
     `;
 
   const mailOptions = {
-    from: process.env.EMAIL_USER,
+    from: `"ic2P2ramp Team" ${process.env.EMAIL_USER}`,
     to: to,
     subject: "Password Reset",
     html: htmlContent,
