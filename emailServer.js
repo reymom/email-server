@@ -65,7 +65,7 @@ app.post("/send-confirmation-email", (req, res) => {
         <body>
             <div class="container">
                 <div class="header">
-                    <img src="https://raw.githubusercontent.com/reymom/ic2P2ramp/ic-prod-network/assets/icRamp-logo.png" alt="icRamp">
+                    <img src="https://raw.githubusercontent.com/reymom/ic2P2ramp/ic-prod-network/src/assets/icRamp-logo.png" alt="icRamp">
                 </div>
                 <div class="content">
                     <h1>You Are Almost There!</h1>
@@ -128,7 +128,7 @@ app.post("/send-password-reset-email", (req, res) => {
         <body>
             <div class="container">
                 <div class="header">
-                    <img src="https://raw.githubusercontent.com/reymom/ic2P2ramp/ic-prod-network/assets/icRamp-logo.png" alt="icRamp">
+                    <img src="https://raw.githubusercontent.com/reymom/ic2P2ramp/ic-prod-network/src/assets/icRamp-logo.png" alt="icRamp">
                 </div>
                 <div class="content">
                     <div>
