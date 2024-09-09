@@ -65,11 +65,11 @@ app.post("/send-confirmation-email", (req, res) => {
         <body>
             <div class="container">
                 <div class="header">
-                    <img src="https://raw.githubusercontent.com/reymom/ic2P2ramp/develop/assets/p2ploan.png" alt="ic2P2ramp">
+                    <img src="https://raw.githubusercontent.com/reymom/ic2P2ramp/ic-prod-network/assets/icRamp-logo.png" alt="icRamp">
                 </div>
                 <div class="content">
                     <h1>You Are Almost There!</h1>
-                    <p>Only one step left to become a part of ic2P2ramp. Please enter this verification code in the window where you started creating your account or click the button below.</p>
+                    <p>Only one step left to become a part of icRamp. Please enter this verification code in the window where you started creating your account or click the button below.</p>
                     <div class="code">${token}</div>
                     <div class="button-container">
                         <a href="${domain}/confirm-email?token=${token}" class="button">Confirm my email</a>
@@ -85,7 +85,7 @@ app.post("/send-confirmation-email", (req, res) => {
     `;
 
   const mailOptions = {
-    from: `"ic2P2ramp Team" ${process.env.EMAIL_USER}`,
+    from: `"icRamp Team" ${process.env.EMAIL_USER}`,
     to: to,
     subject: "Email Confirmation",
     html: htmlContent,
@@ -128,7 +128,7 @@ app.post("/send-password-reset-email", (req, res) => {
         <body>
             <div class="container">
                 <div class="header">
-                    <img src="https://raw.githubusercontent.com/reymom/ic2P2ramp/develop/assets/p2ploan.png" alt="ic2P2ramp">
+                    <img src="https://raw.githubusercontent.com/reymom/ic2P2ramp/ic-prod-network/assets/icRamp-logo.png" alt="icRamp">
                 </div>
                 <div class="content">
                     <div>
@@ -149,7 +149,7 @@ app.post("/send-password-reset-email", (req, res) => {
     `;
 
   const mailOptions = {
-    from: `"ic2P2ramp Team" ${process.env.EMAIL_USER}`,
+    from: `"icRamp Team" ${process.env.EMAIL_USER}`,
     to: to,
     subject: "Password Reset",
     html: htmlContent,
