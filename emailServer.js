@@ -53,6 +53,7 @@ const generateEmailTemplate = (content) => `
           .content { padding: 10px; text-align: center; }
           .content h1 { font-size: 24px; color: #333333; }
           .content p { font-size: 16px; color: #777777; }
+          .content .code { font-size: 32px; font-weight: bold; color: #4CAF50; background-color: #f4f4f4; padding: 10px; display: inline-block; border-radius: 5px; margin-top: 10px; }
           .button-container { margin-top: 20px; }
           .button { background-color: #4CAF50; color: white; padding: 15px 20px; text-align: center; text-decoration: none; display: inline-block; border-radius: 5px; font-size: 16px; }
           .footer { text-align: center; margin-top: 30px; padding: 20px; background-color: #f4f4f4; color: #777777; font-size: 14px; }
