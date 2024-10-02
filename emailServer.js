@@ -72,15 +72,15 @@ const generateEmailTemplate = (content) => `
               <p>If you have any questions, feel free to connect with us on social media:</p>
               <div style="display: inline-block; vertical-align: middle;">
                 <a href="https://t.me/+1qd_xreS_hpkMTBk" target="_blank">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" />
+                  <img src="https://raw.githubusercontent.com/reymom/email-server/refs/heads/develop/assets/telegram-icon.png" alt="Telegram">
                 </a>
               </div>
               <div style="display: inline-block; vertical-align: middle; margin-left: 10px;">
-                <a href="https://x.com/ic_rampXYZ?t=kjzM0v-CJiSfGR_RC8qSCg&s=09" target="_blank">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter" />
+                <a href="https://x.com/ic_rampXYZ?t=kjzM0v-CJiSfGR_RC8qSCg&s=09" targer="_blank">
+                  <img src="https://raw.githubusercontent.com/reymom/email-server/refs/heads/develop/assets/twitter-icon.png" alt="Twitter" style="width: 33px!important">
                 </a>
               </div>
-              <p>Visit our website: <a href="https://sandbox.icramp.xyz" target="_blank">icRamp</a></p>
+              <p>Visit our website: <a href="https://sandbox.icramp.xyz">icRamp</a></p>
           </div>
       </div>
   </body>
@@ -96,7 +96,7 @@ app.post("/send-confirmation-email", (req, res) => {
     <p>Only one step left to become a part of icRamp. Please enter this verification code in the window where you started creating your account or click the button below.</p>
     <div class="code">${token}</div>
     <div class="button-container">
-        <a href="${domain}/confirm-email?token=${token}" class="button">Confirm my email</a>
+        <a href="${domain}/confirm-email?token=${token}" class="button" style="background-color: #4CAF50; color: white !important">Confirm my email</a>
     </div>
   `);
 
@@ -124,7 +124,7 @@ app.post("/send-password-reset-email", (req, res) => {
     <h1>Reset Your Password</h1>
     <p>Please click the button below to reset your password:</p>
     <div class="button-container">
-        <a href="${domain}/reset-password?token=${resetToken}" class="button">Reset Password</a>
+        <a href="${domain}/reset-password?token=${resetToken}" class="button" style="background-color: #4CAF50; color: white !important">Reset Password</a>
     </div>
   `);
 
