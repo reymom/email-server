@@ -68,8 +68,14 @@ const generateEmailTemplate = (content) => `
               ${content}
           </div>
           <div class="footer">
-              <p>If you have any questions, feel free to contact us at</p>
-              <p>Barcelona, Spain</p>
+              <p>If you have any questions, feel free to connect with us on social media:</p>
+              <a href="https://t.me/+1qd_xreS_hpkMTBk" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" />
+              </a>
+              <a href="https://x.com/ic_rampXYZ?t=kjzM0v-CJiSfGR_RC8qSCg&s=09" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter" />
+              </a>
+              <p>Visit our website: <a href="https://app.icramp.xyz" target="_blank">icRamp</a></p>
           </div>
       </div>
   </body>
